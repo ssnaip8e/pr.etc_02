@@ -13,52 +13,53 @@
 <body class="body">
 
   <header class="header">
-    <!-- add image in background -->
     <div class="container">
       <nav class="nav">
         <a class="logo" href="#">
-          <!-- add before & after  -->
+          <!-- add before "SIMPLY" -->
+          <!-- add after "CHOCOLATE" -->
           <img src="#" alt="logo chocolate">
         </a>
-<!-- пересмотреть вёрстку -->
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link link" href="#">Home</a>
-            <a class="nav__link link" href="#">How&nbsp;it's&nbsp;made?</a>
-            <a class="nav__link link" href="#">Our&nbsp;products</a>
-            <a class="nav__link link" href="#">Top&nbsp;sellers</a>
-            <a class="nav__link link" href="#">Chocolate&nbsp;is&nbsp;loved</a>
-          </li>
 
-          <li class="primary-nav__item primary-nav__item_socials">
-            <a class="primary-nav__link" href="#">
-              <img src="#" alt="icon instagramm">
-            </a>
-            <a class="primary-nav__link" href="#">
-              <img src="#" alt="icon twitter">
-            </a>
-          </li>
-        </ul>
+        <div class="nav__list" role="list">
+          <a class="link" href="#">Home</a>
+          <a class="link" href="#">How&nbsp;it's&nbsp;made?</a>
+          <a class="link" href="#">Our&nbsp;products</a>
+          <a class="link" href="#">Top&nbsp;sellers</a>
+          <a class="link" href="#">Chocolate&nbsp;is&nbsp;loved</a>
+        </div>
+
+        <div class="nav__list socials" role="list">
+          <a class="link" href="#">
+            <img src="#" alt="icon instagramm">
+          </a>
+          <a class="link" href="#">
+            <img src="#" alt="icon twitter">
+          </a>
+        </div>
       </nav>
 
-      <div class="banner">
+      <div class="banner" role="banner">
         <h1 class="banner__title hidden">Simple Chocolate</h1>
         <h2 class="banner__title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
 
         <div class="banner__buttons">
-          <div class="group-buttons">
-            <a class="group-buttons__link link link_primary" href="#">Buy&nbsp;now</a>
-            <a class="group-buttons__link link link_secondary" href="#">How&nbsp;it's&nbsp;made</a>
-          </div>
-
-          <a class="scroll-button" href="#">
-            <!-- add before text "scroll&nbsp;down" -->
-            <img src="#" alt="icon link">
+          <a class="link link_primary" href="#">Buy&nbsp;now</a>
+          <a class="link link_secondary" href="#">How&nbsp;it's&nbsp;made</a>
+          <a class="link link_absolute" href="#">scroll down
+            <!-- add before image -->
           </a>
         </div>
       </div>
     </div>
   </header>
+
+  /* ---------------------------------------
+  *  1! Проверить вёрстку, но сначала скачать
+  *   изображения и оптимизировать.
+  *
+  *  2! Шрифты подключить локально.
+  * -------------------------------------- */
 
   <div class="benefits">
     <div class="container">
