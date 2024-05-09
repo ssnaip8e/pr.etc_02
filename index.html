@@ -40,13 +40,13 @@
       </nav>
 
       <div class="banner" role="banner" aria-label="banner page">
-        <h1 class="banner__title hidden">Simple Chocolate</h1>
-        <h2 class="banner__title" aria-label="Treat yourself or a loved one to our finest ingredients for a moment of pure delight!">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
+        <h1 class="hidden">Simple Chocolate</h1>
+        <h2 class="section__title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
 
-        <div class="banner__buttons">
+        <div class="banner__buttons buttons">
           <a class="link link_primary" href="#" aria-label="link on buy now">Buy&nbsp;now</a>
           <a class="link link_secondary" href="#" aria-label="link on how it's made">How&nbsp;it's&nbsp;made</a>
-          <a class="link link_absolute" href="#" aria-label="link on scroll down page">scroll down
+          <a class="link link_absolute" href="#benefits" aria-label="link on scroll down page">scroll down
             <!-- add before image -->
           </a>
         </div>
@@ -54,20 +54,22 @@
     </div>
   </header>
 
-  <div class="benefits">
+  <div class="benefits" id="benefits">
     <div class="container">
-      <ul class="benefits__list">
-        <li class="benefits__item">
+      <ul class="benefits__list list list_tile" role="list" aria-label="list description">
+        <li class="list__item" aria-label="item description">
           <img src="#" alt="icon">
           <h4 class="benefits__title">Unsurpassed&nbsp;taste</h4>
           <p class="benefits__description">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
         </li>
-        <li class="benefits__item">
+
+        <li class="list__item" aria-label="item description">
           <img src="#" alt="icon">
           <h4 class="benefits__title">Affordable&nbsp;price</h4>
           <p class="benefits__description">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
         </li>
-        <li class="benefits__item">
+
+        <li class="list__item" aria-label="item description">
           <img src="#" alt="icon">
           <h4 class="benefits__title">Own&nbsp;production</h4>
           <p class="benefits__description">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
@@ -76,84 +78,202 @@
     </div>
   </div>
 
-  <section class="section taste-sensation">
-    <h2 class="section__title">it all adds up to one exceptional taste sensation</h2>
-    <!-- add :pseudo for margin-bottom -->
-    <p class="section__description">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
+  <div class="container">
+    <section class="section taste">
+      <h2 class="section__title">it all adds up to one exceptional <span>taste</span> sensation</h2>
+      <!-- add :pseudo for margin-bottom -->
+      <p class="section__description">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
 
-    <ul class="section__list">
-      <li class="section__item card">
-        <div class="card__image">
-          <!-- add before text "milk chocolate" -->
-          <img src="#" alt="">
-        </div>
-
-        <div class="card__description">
-          <h4 class="card__title">milk chocolate</h4>
-          <div class="group-tags">
-            <span class="tag tag_primary">chocolate</span>
-            <span class="tag tag_secondary">the benefits</span>
+      <ul class="list" aria-label="list cards">
+        <li class="list__item tile" aria-label="tile">
+          <div class="tile__image">
+            <!-- add before text "milk chocolate" -->
+            <img src="#" alt="">
           </div>
-          <p class="card__description">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
-        </div>
-      </li>
 
-      <li class="section__item card">
-        <div class="card__image">
-          <!-- add before text "milk" -->
-          <img src="#" alt="">
-        </div>
-
-        <div class="card__description">
-          <h4 class="card__title">milk</h4>
-          <div class="group-tags">
-            <span class="tag tag_primary">milk</span>
-            <span class="tag tag_secondary">the benefits</span>
+          <div class="tile__info">
+            <h3 class="tile__title">milk chocolate</h3>
+            <div class="tags">
+              <span class="tag tag_primary">chocolate</span>
+              <span class="tag tag_secondary">the benefits</span>
+            </div>
+            <p class="tile__description">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
           </div>
-          <p class="card__description">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
-        </div>
-      </li>
+        </li>
 
-      <li class="section__item card">
-        <div class="card__image">
-          <!-- add before text "nuts" -->
-          <img src="#" alt="">
-        </div>
-
-        <div class="card__description">
-          <h4 class="card__title">nuts</h4>
-          <div class="group-tags">
-            <span class="tag tag_primary">nuts</span>
-            <span class="tag tag_secondary">the benefits</span>
+        <li class="list__item tile" aria-label="tile">
+          <div class="tile__image">
+            <!-- add before text "milk" -->
+            <img src="#" alt="">
           </div>
-          <p class="card__description">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They're a good source of fiber, healthy fats, and plant protein. Plus, they're great on their own.</p>
-        </div>
-      </li>
 
-      <li class="section__item card">
-        <div class="card__image">
-          <!-- add before text "semi-sweet chocolate" -->
-          <img src="#" alt="">
-        </div>
-
-        <div class="card__description">
-          <h4 class="card__title">semi-sweet chocolate</h4>
-          <div class="group-tags">
-            <span class="tag tag_primary">sweet chocolate</span>
-            <span class="tag tag_secondary">the benefits</span>
+          <div class="tile__info">
+            <h3 class="tile__title">milk</h3>
+            <div class="tags">
+              <span class="tag tag_primary">milk</span>
+              <span class="tag tag_secondary">the benefits</span>
+            </div>
+            <p class="tile__description">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
           </div>
-          <p class="card__description">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow. </p>
+        </li>
+
+        <li class="list__item tile" aria-label="tile">
+          <div class="tile__image">
+            <!-- add before text "nuts" -->
+            <img src="#" alt="">
+          </div>
+
+          <div class="tile__info">
+            <h3 class="tile__title">nuts</h3>
+            <div class="tags">
+              <span class="tag tag_primary">nuts</span>
+              <span class="tag tag_secondary">the benefits</span>
+            </div>
+            <p class="tile__description">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They're a good source of fiber, healthy fats, and plant protein. Plus, they're great on their own.</p>
+          </div>
+        </li>
+
+        <li class="list__item tile" aria-label="tile">
+          <div class="tile__image">
+            <!-- add before text "semi-sweet chocolate" -->
+            <img src="#" alt="">
+          </div>
+
+          <div class="tile__info">
+            <h3 class="tile__title">semi-sweet chocolate</h3>
+            <div class="tags">
+              <span class="tag tag_primary">sweet chocolate</span>
+              <span class="tag tag_secondary">the benefits</span>
+            </div>
+            <p class="tile__description">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow. </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section how-made">
+      <h2 class="section__title">how&nbsp;it's <span>made?</span></h2>
+
+      <div class="flex">
+        <div class="how-made__image">
+          <img src="#" alt="image coocking">
         </div>
-      </li>
-    </ul>
-  </section>
 
-  <section class="section how-made">
-    <h2 class="section__title">how&nbsp;it's&nbsp;made?</h2>
-    <!--  -->
-  </section>
+        <div class="how-made__info">
+          <h4 class="how-made__title">Try  our chocolates today and discover the perfect balance of flavor</h4>
+          <ul class="how-made__list list" aria-label="list coocking">
+            <li class="list__item">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
+            <li class="list__item">At the same time, prepare a water bath. Melt the butter on it.</li>
+            <li class="list__item">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
+            <li class="list__item">Heat the mixture over low heat, letting it barely boil.</li>
+            <li class="list__item">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <section class="section our-products">
+      <h2 class="section__title">Our <span>products</span></h2>
 
+      <ul class="products" role="list" aria-label="list products">
+        <li class="product">
+          <div class="product__image">
+            <img src="#" alt="">
+          </div>
+
+          <div class="product__info">
+            <p class="product__name">orange</p>
+            <p class="product__type-chocolate">dark chocolate</p>
+            <p class="product__count" data-count="45 UAH"></p>
+          </div>
+        </li>
+
+        <li class="product">
+          <div class="product__image">
+            <img src="#" alt="">
+          </div>
+
+          <div class="product__info">
+            <p class="product__name">apple&cranberry</p>
+            <p class="product__type-chocolate">milk chocolate</p>
+            <p class="product__count" data-count="45 UAH"></p>
+          </div>
+        </li>
+
+        <li class="product">
+          <div class="product__image">
+            <img src="#" alt="">
+          </div>
+
+          <div class="product__info">
+            <p class="product__name">lime&sea salt</p>
+            <p class="product__type-chocolate">dark chocolate</p>
+            <p class="product__count" data-count="45 UAH"></p>
+          </div>
+        </li>
+
+        <li class="product">
+          <div class="product__image">
+            <img src="#" alt="">
+          </div>
+
+          <div class="product__info">
+            <p class="product__name">pine apple</p>
+            <p class="product__type-chocolate">dark chocolate</p>
+            <p class="product__count" data-count="45 UAH"></p>
+          </div>
+        </li>
+
+        <li class="product">
+          <div class="product__image">
+            <img src="#" alt="">
+          </div>
+
+          <div class="product__info">
+            <p class="product__name">classic</p>
+            <p class="product__type-chocolate">milk chocolate</p>
+            <p class="product__count" data-count="45 UAH"></p>
+          </div>
+        </li>
+
+        <li class="product">
+          <div class="product__image">
+            <img src="#" alt="">
+          </div>
+
+          <div class="product__info">
+            <p class="product__name">honey</p>
+            <p class="product__type-chocolate">milk chocolate</p>
+            <p class="product__count" data-count="45 UAH"></p>
+          </div>
+        </li>
+
+        <li class="product">
+          <div class="product__image">
+            <img src="#" alt="">
+          </div>
+
+          <div class="product__info">
+            <p class="product__name">roadted fruits</p>
+            <p class="product__type-chocolate">dark chocolate</p>
+            <p class="product__count" data-count="45 UAH"></p>
+          </div>
+        </li>
+
+        <li class="product">
+          <div class="product__image">
+            <img src="#" alt="">
+          </div>
+
+          <div class="product__info">
+            <p class="product__name">classic</p>
+            <p class="product__type-chocolate">white chocolate</p>
+            <p class="product__count" data-count="45 UAH"></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
 
 
 
