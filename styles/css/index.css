@@ -51,6 +51,6 @@ a {
 .banner {
   height: 100%;
   min-height: 37.5rem;
-  background-image: url('../../images/banner.png');
+  background-image: url('../../../../assets/images/banner.png'), linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%);
   background-size: cover;
 }
