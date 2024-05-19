@@ -1,9 +1,107 @@
-//@img-path: '';
-// @{img-path}name-img.jpg
 
 .banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 100%;
   min-height: 37.5rem;
-  background-image: url('./../../../../assets/images/banner.png'), @bg-gradient-04;
+  padding: 2.5rem;
+  background-image: url('./../../../../assets/images/banner.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: @rounded[md];
+
+  &__title {
+    margin-bottom: 2rem;
+    max-width: 30.25rem;
+    font-weight: @fweight[regular];
+    font-size: @fsize[xl];
+    line-height: @lheight;
+    letter-spacing: @lspacing;
+    color: @text-light;
+  }
 }
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+}
+
+.link {
+  font-weight: @fweight[medium];
+  font-size: @fsize[sm];
+  color: @text-default;
+
+  &:hover {
+    color: @text-accent;
+  }
+  &_primary {
+    padding: @button-paddings[desktop];
+    font-weight: @fweight[semi-bold];
+    color: @bg-light;
+    background-color: @bg-accent;
+    border-radius: @rounded[lg];
+  }
+  &_secondary {
+    padding: @button-paddings[desktop];
+    font-weight: @fweight[semi-bold];
+    color: @bg-light;
+    border: @border;
+    border-radius: @rounded[lg];
+  }
+  &_social {
+    &:hover {
+      scale: 1.2
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__accent {
+    font-weight: @fweight[semi-bold];
+    font-size: @fsize[md];
+    text-transform: uppercase;
+  }
+  &__accent:first-child {
+    font-style: italic;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    margin-right: 12rem;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &_socials {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-left: 8.5rem;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
