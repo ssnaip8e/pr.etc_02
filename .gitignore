@@ -4,4 +4,5 @@
 .vscode
 
 # files styles
-
+.test.less
+.test.css
